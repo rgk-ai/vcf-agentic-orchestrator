@@ -8,14 +8,14 @@ An LLM-driven orchestrator (Claude) that takes a natural-language tenant onboard
 
 ## Architecture
 User prompt 
-↓
- Orchestrator (Claude) 
-↓ structured handoffs 
-┌──┴──┬─────────┬─────────┐ 
-Tenant Net Compute Day 2 ← domain sub-agents 
-↓ ↓	 ↓ 	↓ 
+     ↓
+Orchestrator (Claude) 
+   ↓ structured handoffs 
+┌──┴──--┬─────────┬─────────┐ 
+Tenant  Net    Compute 	 Day 2   ← domain sub-agents 
+↓ 	↓	↓ 	↓ 
 MCP servers (one per domain) 
-↓ ↓ ↓ ↓ 
+↓ 	↓ 	↓ 	↓ 
 Mock VCF APIs (FastAPI)
 ## Status
 
